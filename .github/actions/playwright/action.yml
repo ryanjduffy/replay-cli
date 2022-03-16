@@ -23,8 +23,9 @@ runs:
     - uses: bahmutov/npm-install@v1
       with:
         working-directory: ${{ inputs.working-directory }}
-    - uses: recordreplay/action-playwright@main
+    - uses: recordreplay/action-playwright@ryan-public
       with:
+        public: true
         issue-number: ${{ inputs.issue-number }}
         project: ${{ inputs.project }}
         apiKey: ${{ inputs.apiKey }}
