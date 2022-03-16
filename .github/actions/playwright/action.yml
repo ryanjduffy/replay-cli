@@ -23,7 +23,7 @@ runs:
     - uses: bahmutov/npm-install@v1
       with:
         working-directory: ${{ inputs.working-directory }}
-    - uses: recordreplay/action-playwright@ryan-public
+    - uses: replayio/action-playwright@ryan-public
       with:
         public: true
         issue-number: ${{ inputs.issue-number }}
